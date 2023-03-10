@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-size: cover !important;
+    background: url("/static/img/issuetracker.png") no-repeat;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.card {
+    background-color: #9a8aea;
+}
+
+.card-margin {
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+.small-text {
+    font-size: 13px;
+}
+
+.edit-button{
+    width: 70px;
+}
+
+textarea {
+    resize: both;
+    height: 100%;
+    width: 100%;
+}
+
+.margin-buttons {
+    margin-bottom: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-primary {
+    margin-left: 10px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#id_type.form-select {
+    margin-left: 33px;
+}
+
+#id_status.form-select {
+    margin-left: 10px;
+}
+
+.title {
+    background-color: #9a8aea;
+    margin-left: 50px;
+}
