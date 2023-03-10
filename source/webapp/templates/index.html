@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="title col-5">
+            <h1>
+                Проекты
+            </h1>
+        </div>
+        {% include 'partial/search.html' %}
+        <div class="row">
+
+            {% for project in projects %}
+                <div class="card card-margin col-5">
+                    <h2>{{ project.name }}</h2>
+                    <p>Начало Проекта: {{ project.started_at }}</p>
+                    <p>
+                        <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">Read More</a>
+                    </p>
+                </div>
+                {% empty %}
+                <h1>Проекты не найдены</h1>
+            {% endfor %}
+            {% if is_paginated %}
+                {% include 'partial/pagination.html' %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+
+
